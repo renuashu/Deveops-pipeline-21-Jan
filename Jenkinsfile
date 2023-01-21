@@ -19,7 +19,7 @@ stages
             }
             
              stage ('get approval')
-            { input"please approve the deployment?" }
+            {input "please approve the deployment?" }
             
             stage ('deploy')
             { steps
