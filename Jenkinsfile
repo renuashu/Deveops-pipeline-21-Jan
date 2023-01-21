@@ -5,22 +5,22 @@ stages
       {
             Stage ('git clone')
             { steps
-             { sh 'downloading code'}
+             { echo'downloading code'}
             }
             
             Stage ('code compile')
             { steps
-             { sh 'code is compliling'}
+             { echo 'code is compliling'}
             }
             
             Stage ('code execution')
             { steps
-             { sh 'code is executing'}
+             { echo 'code is executing'}
             }
             
             Stage ('code build')
             { steps
-             { sh 'code is building now'}
+             { echo 'code is building now'}
             }
       }
 }
