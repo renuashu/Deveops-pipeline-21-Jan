@@ -20,7 +20,7 @@ stages
             
             Stage ('code build')
             { steps
-             {{ sh 'code is building'}}
+             {{ sh 'code is building now'}}
             }
       }
 }
