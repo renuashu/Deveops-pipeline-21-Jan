@@ -3,24 +3,21 @@ pipeline
 agent any
 stages
       {
-            Stage ('git clone')
+            Stage ('build')
             { steps
-             { echo 'downloading code'}
+             { echo 'building'}
             }
             
-            Stage ('code compile')
+            Stage ('test')
             { steps
-             { echo 'code is compliling'}
+             { echo 'testing'}
             }
             
-            Stage ('code execution')
+            Stage ('deploy')
             { steps
-             { echo 'code is executing'}
+             { echo 'deplyoing'}
             }
             
-            Stage ('code build')
-            { steps
-             { echo 'code is building now'}
-            }
+           
       }
 }
