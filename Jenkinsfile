@@ -8,6 +8,11 @@ stages
              { echo 'building'}
             }
             
+              stage ('complile')
+            { steps
+             { echo 'compling'}
+            }
+            
             stage ('test')
             { steps
              { echo 'testing'}
