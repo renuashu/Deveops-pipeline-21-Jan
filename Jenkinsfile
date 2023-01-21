@@ -5,7 +5,7 @@ stages
       {
             Stage ('git clone')
             { steps
-             { echo'downloading code'}
+             { echo 'downloading code'}
             }
             
             Stage ('code compile')
