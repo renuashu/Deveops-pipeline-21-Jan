@@ -18,11 +18,13 @@ stages
              { echo 'testing'}
             }
             
+             stage ('get approval')
+            { input "please approve the deployment?" }
+            
             stage ('deploy')
             { steps
-             { echo 'deplyoing'}
+             { echo 'code is deplyoing'}
             }
-            
            
       }
 }
